@@ -1,0 +1,64 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "https://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" role="img" tabindex="0" aria-label="Graph of Step Functions state machine" width="221" height="323"><g transform="translate(12,19.180986404418945)"><g class="nodes"><g class="node-container" transform="translate(98.0250015258789,18.800000190734863)"><g class="node anchor"><circle class="shape" x="-15.980987548828125" y="-8.800000190734863" r="25.980987548828125"/><text class="label"><tspan xml:space="preserve" text-anchor="middle" alignment-baseline="central">Start</tspan></text></g></g><g class="node-container" transform="translate(98.0250015258789,269.20000171661377)"><g class="node anchor"><circle class="shape" x="-12.175000190734863" y="-8.800000190734863" r="22.175000190734863"/><text class="label"><tspan xml:space="preserve" text-anchor="middle" alignment-baseline="central">End</tspan></text></g></g><g class="node-container" transform="translate(98.0250015258789,81.40000057220459)"><g class="link"><rect class="shape" rx="5" ry="5" x="-77.0562515258789" y="-18.800000190734863" width="154.1125030517578" height="37.60000038146973"/><a href="#/functions/serialize-image-data-from-s3/$LATEST" target="_blank"><text class="label" xml:space="preserve" text-anchor="middle" alignment-baseline="central">Serialisze Image data</text></a></g></g><g class="node-container" transform="translate(98.0250015258789,144.00000095367432)"><g class="link"><rect class="shape" rx="5" ry="5" x="-55.35000228881836" y="-18.800000190734863" width="110.70000457763672" height="37.60000038146973"/><a href="#/functions/classify-image-from-s3/$LATEST" target="_blank"><text class="label" xml:space="preserve" text-anchor="middle" alignment-baseline="central">classify-image</text></a></g></g><g class="node-container" transform="translate(98.0250015258789,206.60000133514404)"><g class="link"><rect class="shape" rx="5" ry="5" x="-98.0250015258789" y="-18.800000190734863" width="196.0500030517578" height="37.60000038146973"/><a href="#/functions/filter-low-confidence-inferences/$LATEST" target="_blank"><text class="label" xml:space="preserve" text-anchor="middle" alignment-baseline="central">check-confidence-threshold</text></a></g></g></g><g class="edges"><g class="edge"><path class="path" marker-end="url(#arrowhead1)" d="M98.0250015258789,100.20000076293945L98.0250015258789,102.28333409627278C98.0250015258789,104.36666742960612,98.0250015258789,108.53333409627278,98.0250015258789,112.70000076293945C98.0250015258789,116.86666742960612,98.0250015258789,121.03333409627278,98.0250015258789,123.11666742960612L98.0250015258789,125.20000076293945" style="fill: none;"/><defs><marker id="arrowhead1" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z"/></marker></defs></g><g class="edge"><path class="path" marker-end="url(#arrowhead2)" d="M98.0250015258789,44.78098773956299L98.0250015258789,45.66748984654745C98.0250015258789,46.5539919535319,98.0250015258789,48.326996167500816,98.0250015258789,51.2968316078186C98.0250015258789,54.26666704813639,98.0250015258789,58.43333371480306,98.0250015258789,60.51666704813639L98.0250015258789,62.60000038146973" style="fill: none;"/><defs><marker id="arrowhead2" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z"/></marker></defs></g><g class="edge"><path class="path" marker-end="url(#arrowhead3)" d="M98.0250015258789,162.80000114440918L98.0250015258789,164.88333447774252C98.0250015258789,166.96666781107584,98.0250015258789,171.13333447774252,98.0250015258789,175.30000114440918C98.0250015258789,179.46666781107584,98.0250015258789,183.63333447774252,98.0250015258789,185.71666781107584L98.0250015258789,187.80000114440918" style="fill: none;"/><defs><marker id="arrowhead3" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z"/></marker></defs></g><g class="edge"><path class="path" marker-end="url(#arrowhead4)" d="M98.0250015258789,225.4000015258789L98.0250015258789,227.48333485921225C98.0250015258789,229.56666819254556,98.0250015258789,233.73333485921225,98.0250015258789,237.3375015258789C98.0250015258789,240.94166819254556,98.0250015258789,243.98333485921225,98.0250015258789,245.50416819254556L98.0250015258789,247.0250015258789" style="fill: none;"/><defs><marker id="arrowhead4" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z"/></marker></defs></g></g></g><style xmlns="http://www.w3.org/1999/xhtml">
+.link &gt; rect {
+  fill: #0073bb;
+}
+
+.link .label {
+  fill: #ffffff;
+}
+
+.node &gt; .shape {
+  fill: #ffffff;
+  stroke: #555555;
+  stroke-width: 0.6px;
+}
+
+path {
+  background-color: #555555;
+  stroke: #555555;
+  stroke-width: 1px;
+}
+
+.node.state.NotYetStarted &gt; .shape, .node.state.Container &gt; .shape {
+  stroke-dasharray: 5 2;
+}
+
+.node.state.Failed      &gt; .shape, rect.legend.Failed      { fill: #de322f; }
+.node.state.CaughtError &gt; .shape, rect.legend.CaughtError { fill: #ffa500; }
+.node.state.Succeeded   &gt; .shape, rect.legend.Succeeded   { fill: #2bd62e; }
+.node.state.InProgress  &gt; .shape, rect.legend.InProgress  { fill: #53c9ed; }
+.node.state.Cancelled   &gt; .shape, rect.legend.Cancelled   { fill: #dddddd; }
+
+.node.anchor &gt; .shape {
+  fill: #FFDA75;
+}
+
+.node.state.hovered:not(.selected):not(.NotYetStarted) &gt; .shape, .node.selected &gt; .shape {
+  stroke: #555555;
+  stroke-width: 2px;
+}
+
+.node.state.Container.Failed      &gt; .shape { fill: #ee9592; }
+.node.state.Container.CaughtError &gt; .shape { fill: #ffd27f; }
+.node.state.Container.Succeeded   &gt; .shape { fill: #91ea9a; }
+.node.state.Container.InProgress  &gt; .shape { fill :#a9e4f7; }
+.node.state.Container.Cancelled   &gt; .shape { fill: #eeeeee; }
+
+marker {
+  fill: #555555;
+}
+
+.node.anchor, .node.state.NotYetStarted {
+  cursor: default;
+}
+
+.node.state {
+  cursor: pointer;
+}
+
+tspan .label {
+  font-size: 12px;
+  font-weight: normal;
+  text-shadow: none;
+}
+</style></svg>
