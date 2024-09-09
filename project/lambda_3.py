@@ -1,6 +1,7 @@
 import json
 import boto3
 import sagemaker
+import ast
 import base64
 from sagemaker.serializers import IdentitySerializer
 
@@ -19,7 +20,7 @@ def lambda_handler(event, context):
 
 
     # Grab the inferences from the event
-    inferences = event['body']['inferences']
+    inferences = ast.literal_eval(event['body']['inferences'])
 
     # Check if any values in our inferences are above THRESHOLD
     meets_threshold = inferences[0] > THRESHOLD or  inferences[1] > THRESHOLD

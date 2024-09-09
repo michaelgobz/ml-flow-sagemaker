@@ -27,5 +27,9 @@ def lambda_handler(event, context):
     event['body']["inferences"] = inferences.decode('utf-8')
     return {
         'statusCode': 200,
-        'body': json.dumps(event)
+        'body': {
+            "image_data": image,
+            "inferences": inferences
+        
+        }
     }
